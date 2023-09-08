@@ -3,12 +3,12 @@ Write a function called __calculator__ that takes in 2 numbers and an operator a
 
 ## Examples
 `
-    calculator(1, 2, '+') // 3
-    calculator(10, 5, '-') // 5
-    calculator(2, 2, '*') // 4
-    calculator(10, 5, '/') // 2
-    calculator(3, 0, '/') // Division by zero is not allowed
-    calculator(10, 5, '#') // Invalid operator
+    calculator(1, 2, '+') // 3  
+    calculator(10, 5, '-') // 5  
+    calculator(2, 2, '*') // 4  
+    calculator(10, 5, '/') // 2  
+    calculator(3, 0, '/') // Division by zero is not allowed  
+    calculator(10, 5, '#') // Invalid operator  
 `
 
 ## Solution  
