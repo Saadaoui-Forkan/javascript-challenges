@@ -1,4 +1,4 @@
-### Challenge: Title Case
+# Challenge: Title Case
 
 ## Instructions  
 Write a function called __titleCase__ that takes in a string and returns the string with the first letter of each word capitalized.
