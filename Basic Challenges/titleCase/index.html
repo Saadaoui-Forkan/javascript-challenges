@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenges</title>
+    <style>
+        h3 {
+            color: #564949;
+            border: 2px solid #1c1616;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            margin: 20px auto;
+            width: 130px;
+            font-family: system-ui;
+        } 
+
+    </style>
+</head>
+<body>
+    <h3>Title Case</h3>
+
+    <script>
+        function titleCase(str) {
+            const str_2 = str.split(' ')
+            .map(el => {
+                return el[0].toUpperCase() + el.slice(1)
+            })
+            .join(' ')
+            return str_2
+        }
+        console.log(titleCase("I'm a little tea pot"))
+    </script>
+</body>
+</html>
