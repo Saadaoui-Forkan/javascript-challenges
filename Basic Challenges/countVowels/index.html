@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenges</title>
+    <style>
+        h3 {
+            color: #564949;
+            border: 2px solid #1c1616;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            margin: 20px auto;
+            width: 130px;
+            font-family: system-ui;
+        } 
+
+    </style>
+</head>
+<body>
+    <h3>Count Vowels</h3>
+
+    <script>
+        function countVowels (str) {
+            let count = 0
+            str = str.toLowerCase()
+            for (let index = 0; index < str.length; index++) {
+                if (
+                    str[index] === "a" ||
+                    str[index] === "e" ||
+                    str[index] === "i" ||
+                    str[index] === "o" ||
+                    str[index] === "u" 
+                ){
+                    count ++
+                }
+            }
+            return count
+        }
+        console.log(countVowels('hello')); // 2
+        console.log(countVowels('why')); // 0
+        console.log(countVowels('mississippi')); // 4
+    </script>
+</body>
+</html>
