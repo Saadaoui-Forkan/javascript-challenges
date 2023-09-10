@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenges</title>
+    <style>
+        h3 {
+            color: #564949;
+            border: 2px solid #1c1616;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            margin: 20px auto;
+            width: 130px;
+            font-family: system-ui;
+        } 
+
+    </style>
+</head>
+<body>
+    <h3>Fizzbuzz Array</h3>
+
+    <script>
+        function fizzBuzzArray (num) {
+            let arr = []
+            for (let i = 1; i <= num; i++ ) {
+                arr.push(i)
+            }
+            let newArr = arr.map((e,i)=> {
+                if( e%5 === 0 && e%3 === 0) {
+                    return "FizzBuzz"
+                } else if (e%5 === 0) {
+                    return "Buzz"
+                } else if( e%3 === 0){
+                    return "Fizz"
+                } else {
+                    return e
+                }
+            })
+            return newArr
+        }
+        console.log(fizzBuzzArray(5)); 
+        console.log(fizzBuzzArray(15));
+    </script>
+</body>
+</html>
